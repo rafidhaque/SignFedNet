@@ -1,7 +1,10 @@
 import torch
-print(torch.cuda.is_available())  # Should print True if GPU is usable
-print(torch.cuda.get_device_name(0))  # Should print your GPU name if available
 
+def test_gpu():
+    print(f"CUDA Available: {torch.cuda.is_available()}")
+    print(f"GPU Device Name: {torch.cuda.get_device_name(0)}")
+    tensor = torch.randn(3,3).cuda()
+    print(f"Tensor on GPU:\n{tensor}")
 
-import torch
-print(torch.version.cuda)
+if __name__ == "__main__":
+    test_gpu()

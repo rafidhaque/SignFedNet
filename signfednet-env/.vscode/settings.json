@@ -1,0 +1,6 @@
+{
+    "python.defaultInterpreterPath": "signfednet-env/Scripts/python.exe",
+    "terminal.integrated.env.windows": {
+        "PATH": "${env:PATH};C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/bin"
+    }
+}

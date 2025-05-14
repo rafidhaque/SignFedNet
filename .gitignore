@@ -1,0 +1,7 @@
+data/
+models/
+*.pt
+.DS_Store
+signfednet-env/Lib
+signfednet-env/Library
+signfednet-env/Scripts
